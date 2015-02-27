@@ -1,0 +1,22 @@
+{
+    "name": "shaunl/50shades-of-snow.com",
+    "description": "50ShadesOfSnow.com website",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "shaunl",
+            "email": "shaun.lawless@gmail.com"
+        }
+    ],
+    "require": {
+      "silex/silex": ">=1.2"
+    },
+    "require-dev": {
+      "halleck45/phpmetrics": ">=1.1"
+    },
+    "autoload": {
+      "psr-4": {
+        "Shaunl\\FiftyShades": "src/"
+      }
+    }
+}
