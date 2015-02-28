@@ -11,10 +11,11 @@ before_script:
 install:
   - composer install --prefer-source --no-interaction
 
-script: phpunit --configuration tests/phpunit.xml
+  script: phpunit --configuration tests/phpunit.xml --coverage-clover=coverage.clover
 
-#after_script:
-#  - phpmetrics ./src
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
 
 notifications:
   slack: 50shadesofsnow:wm4DseU6q44Sb1tec1kvVbav
