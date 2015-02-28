@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 $app = new Application;
 
-$app->get('/', function (){
+$app->get('/', function() {
     return new Response('Under Construction');
 });
 
