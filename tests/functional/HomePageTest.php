@@ -29,7 +29,7 @@ class HomePageTest extends WebTestCase
     public function index()
     {
         $client  = $this->createClient();
-        $crawler = $client->request('GET', '/');
+        $client->request('GET', '/');
 
         $this->assertTrue($client->getResponse()->isOk());
     }
