@@ -11,5 +11,10 @@ before_script:
 install:
   - composer install --prefer-source --no-interaction
 
+script: phpunit --configuration tests/phpunit.xml
+
+#after_script:
+#  - phpmetrics ./src
+
 notifications:
   slack: 50shadesofsnow:wm4DseU6q44Sb1tec1kvVbav
