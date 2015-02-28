@@ -12,11 +12,13 @@
       "silex/silex": ">=1.2"
     },
     "require-dev": {
-      "halleck45/phpmetrics": ">=1.1"
+      "halleck45/phpmetrics": ">=1.1",
+      "symfony/browser-kit": "2.6.4",
+      "symfony/css-selector": "2.6.4"
     },
     "autoload": {
       "psr-4": {
-        "Shaunl\\FiftyShades": "src/"
+        "Shaunl\\FiftyShades\\": "src/"
       }
     }
 }
