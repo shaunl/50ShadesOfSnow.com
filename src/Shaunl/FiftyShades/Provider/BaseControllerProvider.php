@@ -43,6 +43,7 @@ class BaseControllerProvider implements ServiceProviderInterface, ControllerProv
 
     /**
      * @param Application $app An Application instance
+     * @codeCoverageIgnore
      */
     public function boot(Application $app)
     {
