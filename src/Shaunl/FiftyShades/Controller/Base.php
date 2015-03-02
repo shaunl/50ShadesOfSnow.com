@@ -14,6 +14,6 @@ class Base
      */
     public function index()
     {
-        return "Under Construction";
+        return 'Under Construction';
     }
 }

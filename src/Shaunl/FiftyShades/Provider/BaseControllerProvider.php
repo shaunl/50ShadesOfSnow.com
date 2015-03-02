@@ -26,7 +26,7 @@ class BaseControllerProvider implements ServiceProviderInterface, ControllerProv
         $this->register($app);
         $controller = $app['controllers_factory'];
 
-        $controller->get('/', function () use ($app) {
+        $controller->get('/', function() use ($app) {
             return new Response($app['base.controller']->index(), 200);
         });
 
