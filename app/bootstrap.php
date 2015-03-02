@@ -6,3 +6,6 @@
  */
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+$debug = getenv('ENVIRONMENT') !== 'PRODUCTION' ? true : false;
+define('DEBUG_MODE', $debug);

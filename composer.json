@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-      "silex/silex": ">=1.2"
+      "silex/silex": ">=1.2",
+      "filp/whoops": "1.1"
     },
     "require-dev": {
       "halleck45/phpmetrics": ">=1.1",

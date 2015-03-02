@@ -11,6 +11,11 @@ use Silex\Application;
 
 $app = new Application;
 
+if(DEBUG_MODE) {
+    $app['debug'] = true;
+    $app->register(new \Whoops\Provider\Silex\WhoopsServiceProvider);
+}
+
 $app->mount('/', new \Shaunl\FiftyShades\Provider\BaseControllerProvider);
 
 return $app;
