@@ -5,9 +5,15 @@
  * @copyright 2014 Shaun Lawless
  */
 
-namespace FiftyShades\Controller;
+namespace Shaunl\FiftyShades\Controller;
 
-
-class Base {
-
+class Base
+{
+    /**
+     * @return string
+     */
+    public function index()
+    {
+        return "Under Construction";
+    }
 }

@@ -18,7 +18,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Shaunl\\FiftyShades\\": "src/"
+        "Shaunl\\FiftyShades\\": "src/Shaunl/FiftyShades/"
       }
     }
 }

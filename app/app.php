@@ -8,12 +8,9 @@
 require_once 'bootstrap.php';
 
 use Silex\Application;
-use Symfony\Component\HttpFoundation\Response;
 
 $app = new Application;
 
-$app->get('/', function() {
-    return new Response('Under Construction');
-});
+$app->mount('/', new \Shaunl\FiftyShades\Provider\BaseControllerProvider);
 
 return $app;
