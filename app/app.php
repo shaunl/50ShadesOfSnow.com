@@ -11,7 +11,7 @@ use Silex\Application;
 
 $app = new Application;
 
-if(DEBUG_MODE) {
+if (DEBUG_MODE) {
     $app['debug'] = true;
     $app->register(new \Whoops\Provider\Silex\WhoopsServiceProvider);
 }
